@@ -1,18 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Page</title>
-    <link rel="stylesheet" href="stylesheet.css">
-<style>
-      body {
+body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   line-height: 1.42em;
-  color:#e22b2b;
-  background-color:#facaca;
+  color:#A7A1AE;
+  background-color:#1F2739;
 }
 
 h1 {
@@ -40,14 +34,14 @@ h2 a {
   text-decoration: none;
 }
 
-.blue { color: #fd5842; }
-.yellow { color: #ff7842; }
+.blue { color: #185875; }
+.yellow { color: #FFF842; }
 
 .container th h1 {
     font-weight: bold;
     font-size: 1em;
   text-align: left;
-  color: #fd5d35;
+  color: #185875;
 }
 
 .container td {
@@ -75,16 +69,16 @@ h2 a {
 
 /* Background-color of the odd rows */
 .container tr:nth-child(odd) {
-    background-color: #f5d8a4;
+    background-color: #323C50;
 }
 
 /* Background-color of the even rows */
 .container tr:nth-child(even) {
-    background-color: #aacbfc;
+    background-color: #2C3446;
 }
 
 .container th {
-    background-color: #f0e0c2;
+    background-color: #1F2739;
 }
 
 .container td:first-child { color: #FB667A; }
@@ -114,23 +108,3 @@ h2 a {
 .container td:nth-child(4),
 .container th:nth-child(4) { display: none; }
 }
-</style>
-</head>
-<body>
-    <div class="form">  
-        <form action="doInsert" method="POST">
-            
-            <h1>Add New Product</h1>
-            
-            <div class="menu">
-                <p><span>Name:</span> <input type="text" name="txtName" style="width: 400px" ></p>
-                <p><span>Price:</span> <input type="text" name="txtPrice" style="width: 400px"></p>
-                <p><span>Description:</span><textarea name="txtDescription" id="" cols="21" rows="8" style="width: 400px"></textarea></p>
-                
-            </div>
-            <p class="btn-cr"><input type="submit" id="btn" value="Add"></p>
-        </form>
-    </div>
-</body>
-
-</html>
